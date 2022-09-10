@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\Quota\\Quota.csproj": {}
+    "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\Quota\\Quota.csproj": {}
   },
   "projects": {
-    "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\Quota\\Quota.csproj": {
+    "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\Quota\\Quota.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\Quota\\Quota.csproj",
+        "projectUniqueName": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\Quota\\Quota.csproj",
         "projectName": "Quota",
-        "projectPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\Quota\\Quota.csproj",
+        "projectPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\Quota\\Quota.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\Quota\\obj\\",
+        "outputPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\Quota\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,34 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

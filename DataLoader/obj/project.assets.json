@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\DataLoader\\DataLoader.csproj",
+      "projectUniqueName": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\DataLoader\\DataLoader.csproj",
       "projectName": "DataLoader",
-      "projectPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\DataLoader\\DataLoader.csproj",
+      "projectPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\DataLoader\\DataLoader.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\DataLoader\\obj\\",
+      "outputPath": "D:\\EDUCATION\\SLIIT_Masters\\2nd Year\\1\\AECS\\assignment\\proj\\Prabodha\\FuelTrackerV1\\FuelTrackerV1\\DataLoader\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
