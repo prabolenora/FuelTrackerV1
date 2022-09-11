@@ -6,7 +6,17 @@ services:
     build:
       context: .
       dockerfile: Authentication/Dockerfile
-
+  quota:
+    image: ${DOCKER_REGISTRY-}quota
+    build:
+      context: .
+      dockerfile: Quota/Dockerfile
+  vehicle:
+    image: ${DOCKER_REGISTRY-}vehicle
+    build:
+      context: .
+      dockerfile: Vehicle/Dockerfile
+    
 
   postgres:
     image: debezium/postgres:13-alpine

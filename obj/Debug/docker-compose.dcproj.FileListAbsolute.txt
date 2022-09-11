@@ -14,3 +14,13 @@ D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Quota.deps.json
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Quota.runtimeconfig.json
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Quota.exe
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Vehicle.deps.json
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Vehicle.runtimeconfig.json
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Vehicle.exe
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Quota.dll
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Vehicle.dll
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Quota.pdb
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\bin\Debug\Vehicle.pdb

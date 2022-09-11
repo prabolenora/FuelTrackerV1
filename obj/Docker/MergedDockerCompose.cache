@@ -30,6 +30,42 @@ services:
       read_only: true
       bind:
         create_host_path: true
+  postgres:
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: fueltrackerdev
+      POSTGRES_PASSWORD: Abcd!234
+      POSTGRES_USER: postgres
+    image: debezium/postgres:13-alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: postgres-data
+      target: /data/db
+      volume: {}
+  quota:
+    build:
+      context: D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1
+      dockerfile: Quota/Dockerfile
+    image: quota
+    networks:
+      default: null
+  vehicle:
+    build:
+      context: D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1
+      dockerfile: Vehicle/Dockerfile
+    image: vehicle
+    networks:
+      default: null
 networks:
   default:
     name: dockercompose827470884412441903_default
+volumes:
+  postgres-data:
+    name: dockercompose827470884412441903_postgres-data
