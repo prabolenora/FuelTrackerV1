@@ -32,6 +32,7 @@ services:
     image: quota:dev
     container_name: Quota
     build:
+      target: base
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Quota"
@@ -59,6 +60,7 @@ services:
     image: vehicle:dev
     container_name: Vehicle
     build:
+      target: base
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Vehicle"

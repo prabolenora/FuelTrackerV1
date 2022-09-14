@@ -1,6 +1,6 @@
 ﻿namespace Vehicle.DataAccess
 {
-    public class Vehicle
+    public class Vehicles
     {
         public Guid Id { get; set; }
         public string? vehicleRegistrationNumber { get; set; }

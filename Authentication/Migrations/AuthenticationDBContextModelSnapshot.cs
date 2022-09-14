@@ -22,13 +22,13 @@ namespace Authentication.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Authentication.DataAccess.Authentication", b =>
+            modelBuilder.Entity("Authentication.DataAccess.Authentications", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("chassisNumber")
+                    b.Property<string>("Name")
                         .HasColumnType("text");
 
                     b.Property<string>("registeredDate")

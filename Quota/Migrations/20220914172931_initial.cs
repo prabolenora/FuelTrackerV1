@@ -10,7 +10,7 @@ namespace Quota.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Authentication",
+                name: "Quotas",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -20,14 +20,14 @@ namespace Quota.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Authentication", x => x.Id);
+                    table.PrimaryKey("PK_Quotas", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Authentication");
+                name: "Quotas");
         }
     }
 }

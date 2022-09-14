@@ -7,7 +7,7 @@ namespace Vehicle.DataAccess
         public VehicleDBContext() { }
         public VehicleDBContext(DbContextOptions options):base(options) { }
 
-        public DbSet<Vehicle> Authentication { get; set; }
+        public DbSet<Vehicles> Vehicles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,7 +17,7 @@ namespace Vehicle.DataAccess
 
         private static void SnakeCaseIdentityTableName(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Vehicle>(b => { b.ToTable("Authentication"); });
+            modelBuilder.Entity<Vehicles>(b => { b.ToTable("Vehicles"); });
 
         }
 

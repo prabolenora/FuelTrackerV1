@@ -7,7 +7,7 @@ namespace Quota.DataAccess
         public QuotaDBContext() { }
         public QuotaDBContext(DbContextOptions options):base(options) { }
 
-        public DbSet<Quota> Authentication { get; set; }
+        public DbSet<Quotas> Quotas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,7 +17,7 @@ namespace Quota.DataAccess
 
         private static void SnakeCaseIdentityTableName(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Quota>(b => { b.ToTable("Authentication"); });
+            modelBuilder.Entity<Quotas>(b => { b.ToTable("Quotas"); });
 
         }
 

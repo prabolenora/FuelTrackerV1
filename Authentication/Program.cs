@@ -19,4 +19,12 @@ app.MapGet("/authentication/{val}",async (string val, AuthenticationDBContext db
     var result = await db.Authentication.ToListAsync();
     return Results.Ok(val);
 });
+
+app.MapPost("/authentication", async (Authentications authentication, AuthenticationDBContext db) =>
+{
+    await db.AddAsync(authentication);
+    await db.SaveChangesAsync();
+   // var result = await db.Authentication.ToListAsync();
+    //return Results.Ok(val);
+});
 app.Run();

@@ -1,6 +1,12 @@
-﻿namespace Authentication.DataAccess
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLoader.Models
 {
-    public class Authentication
+    internal class VehicleModel
     {
         public Guid Id { get; set; }
         public string? vehicleRegistrationNumber { get; set; }

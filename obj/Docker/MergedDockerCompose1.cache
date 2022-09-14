@@ -96,6 +96,7 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: Quota
+      target: base
     container_name: Quota
     entrypoint:
     - tail
@@ -156,6 +157,7 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: Vehicle
+      target: base
     container_name: Vehicle
     entrypoint:
     - tail

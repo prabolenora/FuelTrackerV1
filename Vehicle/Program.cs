@@ -14,9 +14,19 @@ builder.Services.AddDbContext<VehicleDBContext>(
   }, ServiceLifetime.Transient
 );
 var app = builder.Build();
-app.MapGet("/authentication/{val}", async (string val, VehicleDBContext db) =>
+app.MapGet("/vehicles/{val}", async (string val, VehicleDBContext db) =>
 {
-    var result = await db.Authentication.ToListAsync();
+    var result = await db.Vehicles.ToListAsync();
     return Results.Ok(val);
 });
+
+app.MapPost("/vehicles", async (Vehicles vehicle, VehicleDBContext db) =>
+{
+    await db.AddAsync(vehicle);
+    await db.SaveChangesAsync();
+    // var result = await db.Authentication.ToListAsync();
+    //return Results.Ok(val);
+});
+
+
 app.Run();

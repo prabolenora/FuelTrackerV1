@@ -7,7 +7,7 @@ namespace Authentication.DataAccess
         public AuthenticationDBContext() { }
         public AuthenticationDBContext(DbContextOptions options):base(options) { }
 
-        public DbSet<Authentication> Authentication { get; set; }
+        public DbSet<Authentications> Authentication { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,7 +17,7 @@ namespace Authentication.DataAccess
 
         private static void SnakeCaseIdentityTableName(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Authentication>(b => { b.ToTable("Authentication"); });
+            modelBuilder.Entity<Authentications>(b => { b.ToTable("Authentication"); });
 
         }
 

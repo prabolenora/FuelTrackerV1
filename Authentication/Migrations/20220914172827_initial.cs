@@ -16,7 +16,7 @@ namespace Authentication.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     vehicleRegistrationNumber = table.Column<string>(type: "text", nullable: true),
                     registeredDate = table.Column<string>(type: "text", nullable: true),
-                    chassisNumber = table.Column<string>(type: "text", nullable: true)
+                    Name = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
