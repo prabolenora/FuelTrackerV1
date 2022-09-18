@@ -12,19 +12,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_authentication$
     volumes:
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication:/app
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_authentication$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/net6.0/Authentication.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_authentication$ \"/app/bin/Debug/net6.0/Authentication.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -39,19 +39,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_quota$
     volumes:
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Quota:/app
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_quota$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_quota$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -60,26 +60,26 @@ services:
     image: vehicle:dev
     container_name: Vehicle
     build:
-      target: base
+      target: build
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Vehicle"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_vehicle$
     volumes:
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Vehicle:/app
       - D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_vehicle$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_vehicle$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
