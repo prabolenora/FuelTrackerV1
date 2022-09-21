@@ -14,6 +14,7 @@ builder.Services.AddDbContext<AuthenticationDBContext>(
   },ServiceLifetime.Transient
 );
 var app = builder.Build();
+
 app.MapGet("/authentication/{val}",async (string val, AuthenticationDBContext db) =>
 {
     var result = await db.Authentication.ToListAsync();
