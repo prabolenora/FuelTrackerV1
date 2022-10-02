@@ -27,6 +27,12 @@ app.MapPost("/quota", async (Quotas quota, QuotaDBContext db) =>
     //return Results.Ok(val);
 });
 
+app.MapGet("/quota", async (QuotaDBContext db) =>
+{
+    var result = await db.Quotas.ToListAsync();
+    return Results.Ok(result);
+});
+
 app.MapPut("/updateQuota", async (string vehicleRegistrationNumber,double usedQuota, QuotaDBContext db) =>
 {
     try

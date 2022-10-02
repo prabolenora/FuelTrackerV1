@@ -60,7 +60,7 @@ services:
     image: vehicle:dev
     container_name: Vehicle
     build:
-      target: build
+      target: build-env
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Vehicle"

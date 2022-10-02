@@ -40,6 +40,7 @@ D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\bin\Debug\net6.0\Npgsql.dll
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\bin\Debug\net6.0\YamlDotNet.NetCore.dll
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\Authentication.csproj.AssemblyReference.cache
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\Authentication.GeneratedMSBuildEditorConfig.editorconfig
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\Authentication.AssemblyInfoInputs.cache
@@ -55,4 +56,3 @@ D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\Authentication.pdb
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\Authentication.genruntimeconfig.cache
 D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\obj\Debug\net6.0\ref\Authentication.dll
-D:\EDUCATION\SLIIT_Masters\2nd Year\1\AECS\assignment\proj\Prabodha\FuelTrackerV1\FuelTrackerV1\Authentication\bin\Debug\net6.0\YamlDotNet.NetCore.dll

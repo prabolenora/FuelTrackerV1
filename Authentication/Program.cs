@@ -15,6 +15,12 @@ builder.Services.AddDbContext<AuthenticationDBContext>(
 );
 var app = builder.Build();
 
+app.MapGet("/authentication", async (AuthenticationDBContext db) =>
+{
+    var result = await db.Authentication.ToListAsync();
+    return Results.Ok(result);
+});
+
 app.MapGet("/authentication/{val}",async (string val, AuthenticationDBContext db) =>
 {
     var result = await db.Authentication.ToListAsync();
