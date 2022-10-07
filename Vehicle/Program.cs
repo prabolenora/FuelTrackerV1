@@ -2,6 +2,7 @@ using Vehicle.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 using ZXing.QrCode;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,17 +24,23 @@ app.MapGet("/vehicles/{VehicleRegNumber}", async (string VehicleRegNumber) =>
 
         using(HttpResponseMessage response= await client.GetAsync(client.BaseAddress))
         {
-            var resContent=response.Content.ReadAsStringAsync().Result;
-            response.EnsureSuccessStatusCode();
-            return Results.Ok(resContent);
+            string  resContent = response.Content.ReadAsStringAsync().Result;
 
-            //var businessunits = JsonConvert.DeserializeObject<List<VehicleOut>>(resContent);
-            //var t = businessunits.FirstOrDefault(x => x.vehicleRegistrationNumber == VehicleRegNumber);
-            //var final = businessunits.Where(o => o.vehicleRegistrationNumber == VehicleRegNumber).ToList();
+
+            List<VehicleInfoDTO>? vehicleInfoList = JsonConvert.DeserializeObject<List<VehicleInfoDTO>>(resContent);
+
+            if (vehicleInfoList != null) {
+               IEnumerable<VehicleInfoDTO> requestVehicleInfo = vehicleInfoList.Where(x=>x.vehicleRegistrationNumber.Trim() == VehicleRegNumber);
+                if (requestVehicleInfo.Count() > 0)
+                {
+                    return Results.Ok(requestVehicleInfo);
+                } 
+
+            }
+            response.EnsureSuccessStatusCode();
+            return Results.NotFound();
         }
     }
-    //var result = await db.Vehicles.ToListAsync();
-    //return Results.Ok(VehicleRegNumber);
 });
 
 app.MapGet("/vehicles", async (VehicleDBContext db) =>
@@ -45,7 +52,7 @@ app.MapGet("/vehicles", async (VehicleDBContext db) =>
 app.MapGet("/genQR/{VehicleRegNumber}/{GUID}", async (string VehicleRegNumber,string GUID) =>
 {
     string bitecode = null;
-    var QrcodeContent = VehicleRegNumber;
+    var QrcodeContent = VehicleRegNumber + "_" + GUID;
     
     var width = 250; // width of the Qr Code    
     var height = 250; // height of the Qr Code    
@@ -75,10 +82,8 @@ app.MapGet("/genQR/{VehicleRegNumber}/{GUID}", async (string VehicleRegNumber,st
         }
         bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
         bitecode = Convert.ToBase64String(ms.ToArray());
-        
     }
     return Results.Ok(bitecode);
-
 });
 
 app.MapPost("/vehicles", async (Vehicles vehicle, VehicleDBContext db) =>
